@@ -1,0 +1,538 @@
+* {margin:auto; 
+  padding: auto;
+  scroll-behavior: smooth;}
+
+h1,h2 {font-family: 'Grape Nuts';}
+
+p {font-family: 'Nunito'; 
+   font-style: italic;
+   font-weight: 900;}
+
+a {text-decoration: none; }
+
+a:visited{color:transparent;}
+
+body{background-color:#E2FDFF;}
+
+@font-face 
+{font-family: 'Grape Nuts';
+ src: url('Font/GrapeNuts-Regular.woff2') format('woff2'),
+      url('Font/GrapeNuts-Regular.woff') format('woff');
+ font-weight: normal;
+ font-style: normal;
+ font-display: swap;}
+
+@font-face 
+ {font-family: 'Nunito';
+  src: url(Font/Nunito-ExtraLightItalic.woff2) format('woff2'),
+       url(Font/Nunito-ExtraLightItalic.woff) format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;}
+    
+@font-face 
+    {font-family: 'Nunito';
+     src: url(/Font/Nunito-ExtraLight.woff2) format('woff2'),
+          url(/Font/Nunito-ExtraLight.woff) format('woff');
+     font-weight: 200;
+     font-style: normal;
+     font-display: swap;}
+
+
+/* <!-- Menu a tedina Start --> */
+.main-box__menu 
+  {display: flex; 
+   flex-direction: row-reverse;}
+
+.menu_logo img 
+  {max-width: 50px; 
+   margin-top: 3%; 
+   margin-left: 17em;}  
+
+summary 
+  {text-align: center;
+   margin-left: 5%;
+   margin-top: 5%;
+   width: 23px;
+   height: 17px;}
+          
+.menu 
+  {width: 40%;
+   margin-top: 8px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   overflow: hidden;
+   position: fixed;
+   background-color: #fffffff3}
+       
+.menu a 
+ {padding: 12px 24px;
+  margin: 0 16px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Grape Nuts';}   
+     
+     
+details::before 
+  {content: "← Menu";
+   position: absolute;
+   margin-left:10%;}
+/* <!-- Menu a tedina Finish --> */
+
+/* <!-- Navbar Start--> */
+.main-navbar
+  {background-color: transparent; 
+   position: fixed; 
+   margin-top: -10%;
+   width: 100vw; 
+   display: flex;
+   font-size: 15px;
+   text-transform: uppercase;}
+
+.main-navbar__logo 
+   {justify-content: flex-end; 
+   background-color: transparent;
+   margin: 2%;}
+
+
+.main-navbar__logo img 
+   {width: 50px;}
+
+.main-navbar__list 
+   {margin-right: 2%;}
+
+.main-navbar__list li 
+   {display: inline; 
+   list-style-type: none;  
+   padding: 12px;
+   border-radius: 30px;
+   background-color: #BFD7FF;
+   font-family: 'Grape Nuts';
+   color: #000000;
+   font-weight: 900;}
+   
+.main-navbar__list li:hover
+   {text-decoration:underline 2px; 
+    color: white; 
+    font-style: italic;}   
+     
+/* Media Query Navbar Start    */
+@media screen and (max-width: 480px)
+   {.main-navbar{display: none;}}
+     
+@media screen and (min-width: 480px)
+   {details{display: none;} 
+   .main-box__menu{display: none;}
+   .menu_logo{display: none;} }
+     
+@media screen and (min-width: 769px)
+   {details{display: none;}
+   .menu_logo{display: none;}}
+       
+@media screen and (min-width: 1200px)
+   {details{display: none;} 
+   .menu_logo{display: none;}}
+/* Media Query Navbar Finish */
+/* <!-- Navbar End --> */
+
+
+/* Start Main Header */
+.main-header 
+    {margin-top: 10%; 
+    background-image: url(Foto/Sorriso.jpg);
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: auto;
+    background-size: contain;}
+
+.main-header__component 
+    {text-align: center;  
+    padding-right: 20%;
+    font-size: 12px;
+    margin-top: 5%;
+    height: 100vh;}
+
+.main-cta input
+     {background-color: #ffffff;
+      border-radius: 8px;
+      border-style: none;
+      color: #000000;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 10px;
+      height: 20px;
+      padding: 5px 10px;
+      text-align: center;
+      text-transform: uppercase;}
+    
+.header__cta input:hover
+    {background-color: #5465FF;
+     color: #ffffff;
+     font-style: italic;
+     box-shadow: 0px 30px 60px -12px rgba(0, 0, 0, 1);}
+
+/* Media Query Header Start    */
+@media screen and (min-width: 320px)
+  {.main-header 
+     {background-size: contain;}
+   .main-header__component h1 
+       {font-size: 2rem; 
+       margin-top: 10%;}}
+
+@media screen and (min-width: 480px)
+   {.main-header__component h1 
+   {font-size: 5rem; 
+    margin-top: 10%; 
+    padding-top: 100px;}
+    .main-cta input 
+   {font-size: 16px;
+    height: 40px;
+    padding: 10px 16px;}}
+
+@media screen and (min-width: 768px)
+   {.main-header__component h1 
+   {font-size: 5rem; 
+    margin-top: 10%; 
+    padding-top: 30px;}
+    .main-cta input 
+   {font-size: 16px;
+   height: 40px;
+   padding: 10px 16px;}}
+
+@media screen and (min-width: 1200px)
+     {.main-header__component h1 
+      {font-size: 6rem; 
+       margin-top: 10% ; 
+       padding-top: 100px;}
+       .main-cta input 
+       {font-size: 16px;
+       height: 40px;
+       padding: 10px 16px;}}
+/* Media Query Header Finish    */
+/* Main Header Finish */
+
+/* First Tabs (Chi Sono) Start */
+.main-tabs 
+    {display: flex;}
+
+.main-tabs__img__first img{
+    width: 100px; 
+    height: 100px; 
+    margin-left:3rem; 
+    margin-top:0.1rem; 
+    border-radius: 50%; 
+    border:solid 5px; 
+    border-color:#1ADACF;
+    z-index:-1}
+
+.main-tabs__img 
+    {width: 200px; 
+    height: 175px; 
+    background: rgba( 255, 255, 255, 0.10 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border:solid 7px; 
+    border-color:#1ADACF;}
+
+.main-tabs__img__first h2
+    {font-size: 15px; 
+     text-align: center; 
+     margin-top: 5%;}    
+
+.main-tabs__text
+    {width: 400px; 
+    height: 300px; 
+    text-align: center; 
+    font-size: 1rem;
+    padding-top: 5%;}
+
+.tabs__cta input
+   {background-color: #54ff6e;
+    color: #ffffff; 
+    margin-top: 2%;}
+
+      
+.tabs__cta input:hover
+    {background-color: #ffffff;
+    color: #000000;
+    font-style: italic;
+    box-shadow: 0px 30px 60px -12px rgba(0, 0, 0, 1);}
+
+/* Media Query First Tabs Start    */
+@media screen and (min-width: 320px)
+   {.main-tabs
+      {display: flex; 
+      flex-direction: column; 
+      margin-top: -45rem;}}
+
+@media screen and (min-width: 480px)
+   {.main-tabs 
+      {display: flex; 
+       flex-direction: column; 
+       margin-top: -35rem;}}
+
+@media screen and (min-width: 768px)
+   {.main-tabs
+      {display: flex; 
+       flex-direction: column; 
+       margin-top: -50rem;}
+       .main-tabs__img 
+       {width: 600px; 
+       height: 350px; }
+       .main-tabs__img__first img{
+         width: 150px; 
+         height: 150px; 
+         margin-left:14rem; 
+         margin-top: 3rem;} 
+      .main-tabs__img__first h2
+         {font-size: 20px;} 
+      .main-tabs__text {font-size: 24px;}}
+
+@media screen and (min-width: 1200px)
+   {.main-tabs
+         {display: flex; 
+         flex-direction: row; 
+         margin-top: -28rem;}
+   .main-tabs__img 
+         {width: 400px; 
+         height: 350px;} 
+   .main-tabs__img__first img{
+         width: 150px; 
+         height: 150px; 
+         margin-left:7.5rem; 
+         margin-top: 3rem; }
+   .main-tabs__img__first h2
+         {font-size: 20px;} 
+   .main-tabs__text{font-size: 24px;}}
+
+@media screen and (min-width: 1201px)
+   {.main-tabs
+      {display: flex; 
+      flex-direction: row; 
+      margin-top: -20rem;}}
+/* Media Query First Tabs Finish    */
+/* First Tabs (Chi Sono) Finish  */
+
+/* <!-- Second Tab (Servizi) Start --> */
+.main-tabs__second 
+    {font-size: 24px; 
+    display: flex; 
+    flex-direction:column;
+    margin-top: -10rem;}
+
+.main-tabs__img__property img 
+    {width: 100%; 
+    height: 11rem; 
+    border-radius: 1%;}
+
+.main-tabs__text__second h2
+        {margin-top: 2px; 
+        font-size: 30px; 
+        margin-bottom: 5%; 
+        text-align: center; 
+        font-weight: 900;}
+
+.main-tabs__text__second li
+    {text-align: center; 
+    padding: 4px; 
+    list-style: none; 
+    margin-right: 15%;
+    font-style: italic; 
+    font-weight: 900;}
+
+.main-tabs__second__cta input
+  {margin-right: 15%;}
+
+
+  .icon-scroll 
+  {z-index: 1;
+  width: 100px;
+   border-style: dashed;
+   border: 5px black;
+   display: flex;
+   overflow-x: scroll;}
+
+.icon-scroll img 
+  {width: 30px; 
+   margin-left: 10px;}  
+  /*  Media Query Second Tabs Start    */ 
+@media screen and (min-width: 768px)
+   {.main-tabs__second 
+      {display: flex; 
+      flex-direction:column; 
+      margin-top: 0.1rem; 
+      text-align: center;}
+      .main-tabs__img__property img {height: 22rem;}
+      .main-tabs__text__second h2 {font-size: 40px;}}
+
+@media screen and (min-width: 1200px)
+   {.main-tabs__second 
+      {font-size: 24px;
+       display: flex; 
+       flex-direction:row-reverse; 
+       margin-top: 9rem;}}
+  /*  Media Query Second Tabs Finish    */ 
+  /* <!-- Second Tab (Servizi) End --> */
+
+  /* <!-- Third Tab (Staff) Start --> */
+  /*  Media Query Third Tabs Start    */ 
+@media screen and (min-width: 320px)
+   {.main-tabs__third
+      {margin-top: -10%;}}
+
+@media screen and (min-width: 768px)
+   {.main-tabs__third
+      {margin-top: 100px;}}
+  
+@media screen and (min-width: 1200px)
+   {.main-tabs__third
+      {display: flex; flex-direction: row;}}
+  /*  Media Query Third Tabs Finish    */ 
+  /* <!-- Third Tab (Staff) End --> */
+
+
+
+/* <!-- Newsletter Start --> */
+.form
+  {width: 100%; 
+   background-color: transparent;
+   margin-top: -8rem;}
+
+.form input 
+{margin-bottom: 1rem;}
+
+.tabs-form 
+    {margin-bottom:30px;
+     display: flex; 
+     flex-direction:column;}
+
+.tabs-form__box
+    {display: flex; 
+     flex-direction: column;
+   margin-bottom: 1rem;}
+
+.text-box__property input 
+    {border-radius: 50px;
+     width: 300px;
+     height: 30px; 
+     outline: none;
+     border:solid 1;
+     border-color: #000000;
+     text-transform: capitalize;}
+
+::placeholder
+ {color: black; 
+  text-align: center;}
+
+.text-box__submit input
+ {width: 150px;
+  background-color: #5465FF;}
+
+.text-box__submit input:hover
+ {background-color: #54ff6e;}  
+
+/*  Media Query Form Start */ 
+@media screen and (min-width: 768px)
+   {.form{margin-top: 3%;}  
+   .tabs-form__box input 
+      {margin-bottom: 1rem;}}
+
+@media screen and (min-width: 1200px){.tabs-form__box
+   {display: flex; 
+    flex-direction: row;}
+    .form{margin-top: 3%;}}
+/*  Media Query Form Finish */ 
+/* <!-- Newsletter End --> */
+
+/* <!-- Footer (Contatti) Start --> */
+.main-footer__link 
+ {margin-right: 50px; 
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;}
+
+.main-footer__link li 
+    {list-style-type: none; 
+     padding: 5px;
+     font-family: 'Grape Nuts';
+     text-align: center;
+     display: inline-block;
+     margin-left: 10px;}
+     
+.main-footer__link li:hover
+    {text-decoration:underline 2px; 
+    color: white; 
+    font-style: italic;
+    border-radius: 30px;
+    background-color: #BFD7FF;} 
+
+.title-contact p 
+ {text-align: center;}
+
+.main-footer__social img{width: 30px;}
+
+.main-footer__social{display: flex; flex-direction: row; margin-top: 20px; margin-bottom: 20px;}
+
+/*  Media Query Footer Modible Start */ 
+@media screen and (min-width: 320px)
+   {.footer-desktop{display: none;}}
+
+@media screen and (min-width: 480px)
+   {.footer-desktop{display: none;}}
+
+@media screen and (min-width: 768px)   
+   {.main-footer__link li  
+      {font-size: 24px; 
+       padding: 30px;} 
+       .title-contact p
+       {font-size: 24px; 
+        padding-left:30px}
+   .main-footer__social img 
+      {width: 60px;}
+   .footer-desktop
+       {display: none;}}
+
+@media screen and (min-width: 1200px) 
+   {.footer-mobile{display: none;}
+   .footer-desktop 
+   {margin-top:20px; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;}
+/*  Media Query Footer Modible Finish */ 
+/* <!-- Footer (Contatti) End --> */
+ 
+/* <!-- Footer Desktop Start --> */
+  .main-footer__social
+   {width: 200px;}
+  
+  .main-footer__link li 
+      {list-style-type: none; 
+       padding: 5px;
+       font-family: 'Grape Nuts';
+       text-align: center;
+       display: block; 
+       font-size: 15px;
+       text-transform: uppercase;}}
+  
+  .main-footer__link li:hover
+      {text-decoration:underline 2px; 
+      color: white; 
+      font-style: italic;
+      border-radius: 30px;
+      background-color: #BFD7FF;}  
+  
+  
+  .main-footer__social img 
+   {width: 30px;}  
+  
+  .title-contact p 
+   {text-align: center;}
+  
+  .main-footer__social 
+      {display: flex; 
+      margin-top:20px;}
+/* <!-- Footer Desktop Finish --> */   
